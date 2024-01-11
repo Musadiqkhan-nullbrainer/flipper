@@ -1,0 +1,69 @@
+.flipper-navbar {
+	background-color: $bg-black;
+	min-height: 72px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid $brdr-black;
+	padding: 12px 20px 12px 40px;
+}
+hr {
+	border-top: 1px solid #222c39;
+}
+.active-bar {
+	display: unset;
+	position: absolute !important;
+	z-index: 999;
+}
+.hide-bar {
+	display: none;
+}
+.menu-bars {
+	width: 25px;
+	.bar {
+		width: 100%;
+		height: 2px;
+		background-color: #01fe86;
+		border-radius: 1px;
+		margin-top: 5px;
+	}
+}
+.sidebar {
+	background-color: $bg-black;
+	border-right: 1px solid $brdr-black;
+	width: 245px;
+	min-height: calc(100vh - 72px);
+
+	.social {
+		bottom: 20px;
+
+		transform: translate(50%, 0);
+	}
+	.active {
+		color: #01fe86 !important;
+		border-left: 1px solid $green;
+		background: linear-gradient(
+			90deg,
+			rgba(0, 255, 134, 0.08) 0%,
+			rgba(0, 255, 134, 0) 100%
+		);
+	}
+	.sidebar-li {
+		padding: 17px 40px;
+		color: $white;
+		width: 100%;
+		font-size: 14px;
+		border-left: 1px solid transparent;
+		cursor: pointer;
+		&:hover {
+			border-left: 1px solid $green;
+			background: linear-gradient(
+				90deg,
+				rgba(0, 255, 134, 0.08) 0%,
+				rgba(0, 255, 134, 0) 100%
+			);
+		}
+	}
+}

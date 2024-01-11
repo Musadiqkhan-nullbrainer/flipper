@@ -1,0 +1,89 @@
+@import "../styles/vars.scss";
+@import "../styles/sidebar.scss";
+@import "../styles/cards.scss";
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family: "Nunito Sans";
+	src: url("../../public/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf");
+}
+body {
+	font-family: "Nunito Sans" !important;
+	width: 100%;
+	min-height: 100vh;
+	background: $body-black;
+}
+
+//-----------------Common Classes---------------------------
+
+.wrapper {
+}
+
+.min-vh-90 {
+	min-height: 90vh;
+}
+
+.Logo {
+	padding: 25px 0px 0px 25px;
+	img {
+		max-width: 100%;
+		width: 151px;
+		height: 42px;
+	}
+}
+
+//----------Inner Wrapper=----------------
+
+.wrapper-sub-topbar {
+	background-color: $body-black !important;
+}
+
+//--------Cursor pointer-----------------
+.cpointer {
+	cursor: pointer;
+}
+
+//---------------- Block Heading ------------------------
+
+table,
+.table {
+	border-collapse: collapse;
+	width: 100%;
+	font-family: Nunito Sans;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 21px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #bfd1ea;
+}
+th {
+	font-family: Nunito Sans;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 21px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #3d4d65;
+}
+th,
+td {
+	text-align: left;
+	padding: 8px;
+	border-top: none !important;
+	min-width: 205px;
+}
+
+tr:nth-child(even) {
+	background-color: $table-even-bg;
+}
+.red {
+	color: $red !important;
+}
+.success {
+	color: $success !important;
+}
