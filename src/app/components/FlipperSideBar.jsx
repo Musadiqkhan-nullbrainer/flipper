@@ -3,8 +3,8 @@ const FlipperSideBar = ({ sidebar, windowSize }) => {
 	return (
 		<div
 			className={`${
-				!windowSize ? "" : sidebar ? " active-bar " : "hide-bar"
-			} sidebar position-relative`}>
+				!windowSize ? "" : sidebar ? " active-bar " : "hide-bar "
+			} sidebar `}>
 			<div className="sidebar-li w-100 d-flex align-items-center mt-3">
 				<img src={"/images/Coin.svg"} alt="coin" className="mr-2" /> Coinflip
 			</div>

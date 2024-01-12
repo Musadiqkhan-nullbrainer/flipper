@@ -109,8 +109,10 @@
 	}
 }
 @media screen and (min-width: 990px) and (max-width: 1279px) {
-	.card-container {
-		margin-bottom: 30px !important;
+	.card-wrapper {
+		.card-container {
+			margin-bottom: 30px !important;
+		}
 	}
 }
 

@@ -32,6 +32,7 @@ hr {
 }
 .sidebar {
 	background-color: $bg-black;
+	position: relative;
 	border-right: 1px solid $brdr-black;
 	width: 245px;
 	min-height: calc(100vh - 72px);
