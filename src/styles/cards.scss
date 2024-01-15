@@ -87,6 +87,18 @@
     color: $gray;
   }
 }
+@keyframes moveIcon {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  } /* Customize the movement */
+}
+
+.icon {
+  animation: moveIcon 12.45s infinite;
+}
 .card-wrapper {
   display: flex;
   justify-content: space-between;
