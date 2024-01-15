@@ -5,11 +5,33 @@ import Cards from "@components/Cards"; // Adjust the path based on your project 
 import Layout from "@components/Layout";
 import Table from "@components/Table";
 import BetAmount from "@components/BetAmount";
+import more from "@public/images/more.svg";
 
+let seq = 0;
+let seqs = 1;
 const Home = () => {
   const [number, setNumber] = useState(550);
   const [hide, setHide] = useState(false);
   const [counter, setCounter] = useState(12.45);
+  const [list, setList] = useState([]);
+  const [lists, setLists] = useState([]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      const newList = [
+        ...list,
+        { id: seq + Math.floor(Math.random() * 25) + 1 },
+      ];
+      newList.sort((a, b) => b.id - a.id);
+      setList(newList);
+      const newLists = [
+        ...list,
+        { id: seq + Math.floor(Math.random() * 3) + 1 },
+      ];
+      newLists.sort((a, b) => b.id - a.id);
+      setLists(newLists);
+    }, 25000);
+  }, [list, lists]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -39,6 +61,91 @@ const Home = () => {
 
   return (
     <Layout>
+      <div className="messages">
+        <>
+          <div className="mt-3">
+            <p className="m-0 p-0 d-flex align-items-center ">
+              <img className="mr-2" src={"/images/bitmoji.svg"} alt="F" />
+              <p className="name mr-2"> FenRik</p>
+              <div
+                className="color mr-2"
+                style={{ backgroundColor: "red" }}
+              ></div>
+              <p className="payment mr-2">ez money</p>
+            </p>
+          </div>
+          <div className="mt-3">
+            <p className="m-0 p-0 d-flex align-items-center ">
+              <img className="mr-2" src={"/images/bitmoji.svg"} alt="F" />
+              <p className="name mr-2"> FenRik</p>
+              <div
+                className="color mr-2"
+                style={{ backgroundColor: "red" }}
+              ></div>
+              <p className="payment mr-2">ez money</p>
+            </p>
+          </div>
+          <div className="mt-3">
+            <p className="m-0 p-0 d-flex align-items-center ">
+              <img className="mr-2" src={"/images/bitmoji.svg"} alt="F" />
+              <p className="name mr-2"> FenRik</p>
+              <div
+                className="color mr-2"
+                style={{ backgroundColor: "red" }}
+              ></div>
+              <p className="payment mr-2">ez money</p>
+            </p>
+          </div>
+          <div className="mt-3">
+            <p className="m-0 p-0 d-flex align-items-center ">
+              <img className="mr-2" src={"/images/bitmoji.svg"} alt="F" />
+              <p className="name mr-2"> FenRik</p>
+              <div
+                className="color mr-2"
+                style={{ backgroundColor: "red" }}
+              ></div>
+              <p className="payment mr-2">ez money</p>
+            </p>
+          </div>
+          <div className="mt-3">
+            <p className="m-0 p-0 d-flex align-items-center ">
+              <img className="mr-2" src={"/images/bitmoji.svg"} alt="F" />
+              <p className="name mr-2"> FenRik</p>
+              <div
+                className="color mr-2"
+                style={{ backgroundColor: "#AA9987" }}
+              ></div>
+              <p className="payment mr-2">ez money</p>
+            </p>
+          </div>
+          <div className="mt-3">
+            <p className="m-0 p-0 d-flex align-items-center ">
+              <img className="mr-2" src={"/images/bitmoji.svg"} alt="F" />
+              <p className="name mr-2"> FenRik</p>
+              <div
+                className="color mr-2"
+                style={{ backgroundColor: "#534235" }}
+              ></div>
+              <p className="payment mr-2">ez money</p>
+            </p>
+          </div>
+          <div className="mt-3">
+            <p className="m-0 p-0 d-flex align-items-center ">
+              <img className="mr-2" src={"/images/bitmoji.svg"} alt="F" />
+              <p className="name mr-2"> FenRik</p>
+              <div
+                className="color mr-2"
+                style={{ backgroundColor: "red" }}
+              ></div>
+              <p className="payment mr-2">ez money</p>
+            </p>
+          </div>
+          <div className="mt-4 messages-input d-flex align-items-center justify-content-between">
+            <input className="" type="text" placeholder="Type Message" />
+            <img src="/images/more.svg" className="cpointer" />
+          </div>
+        </>
+      </div>
       <div className="details-wrapper">
         <div className="detail-box">
           <div className="row">
@@ -71,15 +178,15 @@ const Home = () => {
           <div className="card-wrapper flex-md-wrap card-wrapper-padding">
             <div className="card-container mb-lg-0 mb-5">
               <CardBars />
-              <Cards />
+              <Cards list={lists} id="first" />
             </div>
             <div className="card-container mb-lg-0 mb-5">
               <CardBars />
-              <Cards count={true} />
+              <Cards list={list} id="second" />
             </div>
             <div className="card-container mb-lg-0 mb-5">
               <CardBars />
-              <Cards />
+              <Cards list={list} id="third" />
             </div>
           </div>
         </div>

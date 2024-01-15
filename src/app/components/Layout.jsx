@@ -10,6 +10,8 @@ const Layout = ({ children }) => {
   const [windowSize, setWindowSize] = useState(width <= 1000 ? true : false);
   useEffect(() => {
     const { width } = window.visualViewport;
+    setSidebar(width <= 1000 ? false : true);
+    setWidth(width <= 1000 ? true : false);
     setWidth(width);
   }, []);
   return (

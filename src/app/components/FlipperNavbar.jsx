@@ -28,7 +28,7 @@ const FlipperNavbar = ({ sidebar, setSidebar, setWindowSize, windowSize }) => {
   return (
     <>
       <div className="flipper-navbar">
-        <div className="d-flex align-items-center">
+        <div className="d-flex align-items-center mobile">
           {windowSize && (
             <div className="menu-bars mr-3" onClick={() => showSidebar()}>
               <div className="bar" />
