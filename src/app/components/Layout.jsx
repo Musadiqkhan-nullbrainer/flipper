@@ -6,7 +6,9 @@ import { useState, useEffect } from "react";
 // eslint-disable-next-line react/prop-types
 const Layout = ({ children }) => {
 	const [width, setWidth] = useState("");
-	const [sidebar, setSidebar] = useState(width <= 1000 ? false : true);
+	const [sidebar, setSidebar] = useState(
+		window.innerWidth <= 1000 ? false : true
+	);
 	const [windowSize, setWindowSize] = useState(width <= 1000 ? true : false);
 	useEffect(() => {
 		const { width } = window.visualViewport;
