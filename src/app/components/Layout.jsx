@@ -9,7 +9,9 @@ const Layout = ({ children }) => {
 	const [sidebar, setSidebar] = useState(
 		window.innerWidth <= 1000 ? false : true
 	);
-	const [windowSize, setWindowSize] = useState(width <= 1000 ? true : false);
+	const [windowSize, setWindowSize] = useState(
+		window.innerWidth <= 1000 ? true : false
+	);
 	useEffect(() => {
 		const { width } = window.visualViewport;
 		setSidebar(width <= 1000 ? false : true);

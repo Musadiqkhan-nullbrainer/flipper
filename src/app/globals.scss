@@ -82,6 +82,9 @@ td {
 tr:nth-child(even) {
 	background-color: $table-even-bg;
 }
+tr:nth-child(odd) {
+	background-color: $bg-black;
+}
 .red {
 	color: $red !important;
 }
