@@ -32,15 +32,13 @@ const FlipperNavbar = ({ sidebar, setSidebar, setWindowSize, windowSize }) => {
 		<>
 			<div className="flipper-navbar">
 				<div className="d-flex align-items-center mobile">
-					{window.innerWidth <= 1000
-						? windowSize && (
-								<div className="menu-bars mr-3" onClick={() => showSidebar()}>
-									<div className="bar" />
-									<div className="bar" />
-									<div className="bar" />
-								</div>
-						  )
-						: ""}
+					{windowSize && (
+						<div className="menu-bars mr-3" onClick={() => showSidebar()}>
+							<div className="bar" />
+							<div className="bar" />
+							<div className="bar" />
+						</div>
+					)}
 
 					<img src={"/images/Flipper-logo.svg"} alt="logo" />
 				</div>

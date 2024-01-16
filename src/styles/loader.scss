@@ -1,0 +1,39 @@
+.spinner {
+	animation: spin 1s linear infinite; /* Apply the animation */
+}
+.loader {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	display: block;
+	margin: 15px auto;
+	position: relative;
+	background: white;
+	box-shadow: -24px 0 white, 24px 0 white;
+	box-sizing: border-box;
+	animation: shadowPulse 2s linear infinite;
+}
+
+@keyframes shadowPulse {
+	33% {
+		background: white;
+		box-shadow: -24px 0 $table-even-bg, 24px 0 white;
+	}
+	66% {
+		background: $table-even-bg;
+		box-shadow: -24px 0 white, 24px 0 white;
+	}
+	100% {
+		background: white;
+		box-shadow: -24px 0 white, 24px 0 $table-even-bg;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

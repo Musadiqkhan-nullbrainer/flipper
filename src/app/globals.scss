@@ -1,6 +1,7 @@
 @import "../styles/vars.scss";
 @import "../styles/sidebar.scss";
 @import "../styles/cards.scss";
+@import "../styles/loader.scss";
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 * {
@@ -49,7 +50,6 @@ body {
 
 //---------------- Block Heading ------------------------
 
-table,
 .table {
 	border-collapse: collapse;
 	width: 100%;
@@ -81,9 +81,33 @@ td {
 
 tr:nth-child(even) {
 	background-color: $table-even-bg;
+	td {
+		background-color: $table-even-bg;
+		border-top: none !important;
+		color: #bfd1ea !important;
+		border-bottom: none !important;
+	}
+	th {
+		background-color: $table-even-bg;
+		border-top: none !important;
+		color: #3d4d65;
+		border-bottom: none !important;
+	}
 }
 tr:nth-child(odd) {
 	background-color: $bg-black;
+	td {
+		background-color: $bg-black;
+		border-top: none !important;
+		color: #bfd1ea !important;
+		border-bottom: none !important;
+	}
+	th {
+		background-color: $bg-black;
+		border-top: none !important;
+		border-bottom: none !important;
+		color: #3d4d65;
+	}
 }
 .red {
 	color: $red !important;
