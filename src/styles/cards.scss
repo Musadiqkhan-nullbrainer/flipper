@@ -5,7 +5,7 @@
 .messages {
   background: linear-gradient(0deg, #121c23, #121c23),
     linear-gradient(0deg, #18262f, #18262f);
-
+  overflow-x: hidden;
   position: fixed;
   height: calc(100vh - 72px);
   width: 245px;
@@ -220,6 +220,12 @@
 @media screen and (max-width: 1000px) {
   .details-wrapper {
     width: calc(100% - 0px);
+  }
+  .wrapper-sub-topbar {
+    position: relative;
+  }
+  .sidebar {
+    height: 100%;
   }
 }
 @media screen and (min-width: 1600px) {

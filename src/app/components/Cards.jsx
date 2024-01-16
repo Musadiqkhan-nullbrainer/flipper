@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-let seq = 0;
-
+const transition = {
+  type: "spring", // This can be 'tween' as well, depending on the effect you want
+  duration: 0.1, // Adjust duration for smoothness
+  bounce: 0.03, // For spring type, control the 'bounce'
+  ease: "easeInOut", // Easing function for smoothness
+};
 const Cards = ({ list, id }) => {
   return (
     <div className="cards">
@@ -12,15 +16,17 @@ const Cards = ({ list, id }) => {
           139.10
         </p>
       </div>
-      <motion.div layout layoutId={id}>
-        <AnimatePresence>
-          {list.map((item, index) => {
+      <AnimatePresence>
+        {list
+          .sort((a, b) => b.id - a.id)
+          .map((item, index) => {
             return (
               <motion.div
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ opacity: 0 }}
-                key={item}
+                layout
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, transition }}
+                exit={{ opacity: 0, transition }}
+                key={item?.id}
               >
                 <div className="card-detail-row mt-2" key={item.id}>
                   <p className="m-0 p-0 d-flex align-items-center justify-content-center">
@@ -32,8 +38,7 @@ const Cards = ({ list, id }) => {
               </motion.div>
             );
           })}
-        </AnimatePresence>
-      </motion.div>
+      </AnimatePresence>
     </div>
   );
 };

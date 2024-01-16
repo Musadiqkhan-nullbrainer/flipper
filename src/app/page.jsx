@@ -22,15 +22,13 @@ const Home = () => {
         ...list,
         { id: seq + Math.floor(Math.random() * 25) + 1 },
       ];
-      newList.sort((a, b) => b.id - a.id);
       setList(newList);
       const newLists = [
         ...list,
         { id: seq + Math.floor(Math.random() * 3) + 1 },
       ];
-      newLists.sort((a, b) => b.id - a.id);
       setLists(newLists);
-    }, 25000);
+    }, 55000);
   }, [list, lists]);
 
   useEffect(() => {
