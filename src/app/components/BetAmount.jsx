@@ -11,7 +11,7 @@ const BetAmount = () => {
         <input
           className="bet-input mx-2"
           type="number"
-          value={number}
+          value={number?.toFixed(2)}
           placeholder="Enter bet amount..."
         />
         <div className="divider" />
