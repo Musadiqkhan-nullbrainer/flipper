@@ -87,6 +87,59 @@
     color: $gray;
   }
 }
+.icon {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  transition: transform 1s ease, opacity 1s ease;
+}
+.icon-container {
+  overflow: hidden;
+}
+
+.active {
+  transform: translateX(0px);
+} /* Active icon in the center */
+.exit-left {
+  transform: translateX(-100%);
+} /* Active icon exits to the left */
+.enter-right {
+  transform: translateX(100%);
+}
+/* Define positions for each icon */
+.position-0 {
+  transform: translateX(0px);
+}
+.position-1 {
+  transform: translateX(-10px);
+}
+.position-2 {
+  transform: translateX(-20px);
+}
+.position-3 {
+  transform: translateX(-30px);
+}
+.position-4 {
+  transform: translateX(-40px);
+}
+.position-5 {
+  transform: translateX(-50px);
+}
+.position-6 {
+  transform: translateX(-60px);
+}
+.position-7 {
+  transform: translateX(-70px);
+}
+.position-8 {
+  transform: translateX(-80px);
+}
+.position-9 {
+  transform: translateX(-90px);
+}
+.position-10 {
+  transform: translateX(-100px);
+}
 .card-wrapper {
   display: flex;
   justify-content: space-between;
