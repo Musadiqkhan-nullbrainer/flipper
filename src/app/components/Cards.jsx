@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 const transition = {
   type: "spring", // This can be 'tween' as well, depending on the effect you want
-  duration: 0.1, // Adjust duration for smoothness
-  bounce: 0.03, // For spring type, control the 'bounce'
+  duration: 0.01, // Adjust duration for smoothness
+  bounce: 0.06, // For spring type, control the 'bounce'
   ease: "easeInOut", // Easing function for smoothness
 };
 const Cards = ({ list, id }) => {

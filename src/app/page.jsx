@@ -28,7 +28,7 @@ const Home = () => {
         { id: seq + Math.floor(Math.random() * 3) + 1 },
       ];
       setLists(newLists);
-    }, 55000);
+    }, 5000);
   }, [list, lists]);
 
   useEffect(() => {

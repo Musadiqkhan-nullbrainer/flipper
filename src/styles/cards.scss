@@ -11,10 +11,15 @@
   width: 245px;
   bottom: 0;
   z-index: 100;
-  overscroll-behavior: contain;
-  overflow-y: auto;
+
   padding: 10px;
   right: 0px;
+  .messages-container {
+    height: calc(96% - 60px);
+    overscroll-behavior: contain;
+    overflow-y: auto;
+    margin-bottom: 30px;
+  }
   .name {
     margin-bottom: 0 !important;
     color: $light-blue !important;
@@ -209,13 +214,18 @@
     font-weight: 600;
     line-height: 21px;
     letter-spacing: 0em;
-    text-align: right;
     color: #aab5c6;
   }
 }
 .details-wrapper {
   width: calc(100% - 245px);
   padding: 20px;
+}
+.menu-icons {
+  justify-content: space-between;
+}
+.wallet {
+  margin-left: 3.1rem;
 }
 @media screen and (max-width: 1000px) {
   .details-wrapper {
@@ -228,6 +238,31 @@
     height: 100%;
   }
 }
+@media screen and (max-width: 768px) {
+  .menu-icons {
+    width: 100%;
+    justify-content: center !important;
+    margin-top: 20px;
+  }
+  .messages {
+    height: calc(100vh - 133px) !important;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .wallet {
+    margin-left: 0px !important;
+    margin-top: 20px;
+    margin: 0 auto !important;
+  }
+  .messages {
+    height: calc(100vh - 185px) !important;
+  }
+  .card-container {
+    max-width: 100% !important;
+  }
+}
+
 @media screen and (min-width: 1600px) {
   .card-container {
     max-width: 350px;
