@@ -80,7 +80,9 @@ const Home = () => {
             {!hide && (
               <div className="d-flex position-relative w-100 justify-content-center flex-column align-items-center">
                 <div className="rolling">ROLLING</div>
-                <div className="count">{counter.toFixed(2)}</div>
+                <div className="count">
+                  {counter.toFixed(2) < 0 ? 0 : counter.toFixed(2)}
+                </div>
               </div>
             )}
             {!hide && <div className="mask position-absolute z-3 "></div>}
@@ -90,16 +92,16 @@ const Home = () => {
 
           <div className="card-wrapper flex-md-wrap card-wrapper-padding">
             <div className="card-container mb-lg-0 mb-5">
-              <CardBars />
+              <CardBars image="/images/Coin1.svg" text="Win 2x" />
               <Cards list={lists} id="first" />
             </div>
             <div className="card-container mb-lg-0 mb-5">
-              <CardBars />
+              <CardBars image="/images/Coin2.svg" text="Win 14x" />
               <Cards list={list} id="second" />
             </div>
             <div className="card-container mb-lg-0 mb-5">
-              <CardBars />
-              <Cards list={list} id="third" />
+              <CardBars image="/images/Coin3.svg" />
+              <Cards list={list} id="third" text="Win 2x" />
             </div>
           </div>
         </div>

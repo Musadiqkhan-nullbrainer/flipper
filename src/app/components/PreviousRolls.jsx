@@ -10,7 +10,7 @@ const PreviousRolls = () => {
     return () => clearTimeout(timeout);
   }, [number]);
 
-  const [icons, setIcons] = useState([...Array(10).keys()]);
+  const [icons, setIcons] = useState([...Array(11).keys()]);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -20,13 +20,13 @@ const PreviousRolls = () => {
         newIcons.push(movedIcon); // Add it to the end
         return newIcons;
       });
-    }, 3000); // Change every 3 seconds
+    }, 63000); // Change every 3 seconds
 
     return () => clearInterval(timer);
   }, []);
 
   const getIconStyle = (index, iconNumber) => {
-    const position = index * 10; // Position each icon 20px apart
+    const position = index * 5;
     const isMovingIcon = iconNumber === icons[0];
     return {
       transform: `translateX(${position}px)`,
@@ -42,7 +42,10 @@ const PreviousRolls = () => {
   return (
     <div className="previous-roll-wrapper">
       <h4 className="rolls-heading mb-0">Previous rolls</h4>
-      <div className="d-flex alig-items-center justify-content-center icon-container position-relative flex-wrap">
+      <div
+        className="d-flex alig-items-center justify-content-center icon-container position-relative flex-wrap"
+        style={{ width: "400px", marginLeft: "-65px" }}
+      >
         {icons.map((iconNumber, index) => (
           <div
             key={iconNumber}
@@ -62,11 +65,26 @@ const PreviousRolls = () => {
       </div> */}
       <div className="d-flex align-items-center right-coins">
         <h4 className="rolls-heading mb-0 mx-3">Last 100</h4>
-        <img src={"/images/Coin1.svg"} alt="coin" className="mx-1" />
-        <h4 className="mb-0 coin-heading">40</h4>
-        <img src={"/images/Coin2.svg"} alt="coin" className="mx-1" />
-        <h4 className="mb-0 coin-heading">4</h4>
-        <img src={"/images/Coin3.svg"} alt="coin" className="mx-1" />
+        <img
+          src={"/images/Coin1.svg"}
+          alt="coin"
+          className="mx-1"
+          width={"24px"}
+        />
+        <h4 className="mb-0 coin-heading mr-2">40</h4>
+        <img
+          src={"/images/Coin2.svg"}
+          alt="coin"
+          className="mx-1"
+          width={"24px"}
+        />
+        <h4 className="mb-0 coin-heading mr-2">4</h4>
+        <img
+          src={"/images/Coin3.svg"}
+          alt="coin"
+          className="mx-1"
+          width={"24px"}
+        />
         <h4 className="mb-0 coin-heading">56</h4>
       </div>
     </div>

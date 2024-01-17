@@ -75,6 +75,7 @@
 }
 .card-bar {
   display: flex;
+  background-color: #12181d;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -93,13 +94,34 @@
   }
 }
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   background-size: cover;
   transition: transform 1s ease, opacity 1s ease;
 }
 .icon-container {
   overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    z-index: 100;
+    left: 73px;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(26, 28, 36, 0.9)),
+      to(transparent)
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(26, 28, 36, 0.9) 0%,
+      transparent 100%
+    );
+  }
 }
 
 .active {
@@ -166,6 +188,8 @@
 .cards {
   width: 100%;
   padding: 16px;
+  max-height: 400px;
+  overflow-y: auto;
   border-radius: 12px;
   background-color: $bg-card;
   font-size: 12px;
@@ -329,13 +353,14 @@
 }
 
 .bet-amount-wrapper {
-  max-width: 648px;
+  max-width: 708px;
+  margin: 20px auto;
   width: 100%;
   min-height: 40px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0px 16px;
+  padding: 0px 12px;
   border: 1px solid #222c39;
   border-radius: 20px;
   background-color: $body-black;
@@ -358,6 +383,7 @@
   }
   .badge-wrapper {
     display: flex;
+    margin: 0 auto;
     align-items: center;
     flex-wrap: wrap;
     padding: 0px 4px;
@@ -368,21 +394,22 @@
     background-color: #222c39;
     display: flex;
     padding: 2px 8px;
+    width: max-content;
     justify-content: center;
     align-items: center;
     color: #8694b6;
-    font-size: 8.5px;
-    font-weight: 500;
+    font-size: 10px;
+    font-weight: 600;
     text-transform: uppercase;
   }
 }
 
 .previous-roll-wrapper {
-  max-width: 715px;
+  max-width: 785px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   .rolls-heading {

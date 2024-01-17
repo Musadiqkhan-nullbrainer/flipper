@@ -2,17 +2,18 @@ import React, { useState } from "react";
 import PreviousRolls from "./PreviousRolls";
 
 const BetAmount = () => {
-  const [number, setNumber] = useState(0.0);
+  const [number, setNumber] = useState(0);
   return (
     <div className="w-100">
       <PreviousRolls />
-      <div className="bet-amount-wrapper my-3 mx-auto">
+      <div className="bet-amount-wrapper  ">
         <img src={"/images/currency-big.svg"} alt="$" />
         <input
           className="bet-input mx-2"
           type="number"
-          value={number?.toFixed(2)}
+          value={number > 0.0 ? number : ""}
           placeholder="Enter bet amount..."
+          onChange={(e) => setNumber(e.currentTarget.value)}
         />
         <div className="divider" />
         <div className="badge-wrapper">
@@ -21,43 +22,43 @@ const BetAmount = () => {
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => prevNumber + 0.01)}
+            onClick={() => setNumber((prevNumber) => Number(prevNumber) + 0.01)}
           >
             +0.01
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => prevNumber + 0.1)}
+            onClick={() => setNumber((prevNumber) => Number(prevNumber) + 0.1)}
           >
             +0.1
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => prevNumber + 1)}
+            onClick={() => setNumber((prevNumber) => Number(prevNumber) + 1)}
           >
             +1
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => prevNumber + 10)}
+            onClick={() => setNumber((prevNumber) => Number(prevNumber) + 10)}
           >
             +10
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => prevNumber + 100)}
+            onClick={() => setNumber((prevNumber) => Number(prevNumber) + 100)}
           >
             +100
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => prevNumber / 2)}
+            onClick={() => setNumber((prevNumber) => Number(prevNumber) / 2)}
           >
             1/2
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => prevNumber * 2)}
+            onClick={() => setNumber((prevNumber) => Number(prevNumber) * 2)}
           >
             X2
           </div>

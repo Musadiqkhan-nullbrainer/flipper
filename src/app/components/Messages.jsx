@@ -101,11 +101,12 @@ const Messages = () => {
                 <div className="mt-3">
                   <p className="m-0 p-0 d-flex align-items-center ">
                     <img className="mr-2" src={data?.img} alt="F" />
-                    <p className="name mr-2"> {data?.name}</p>
                     <div
                       className="color mr-2"
                       style={{ backgroundColor: data?.color }}
                     ></div>
+                    <p className="name mr-2"> {data?.name}</p>
+
                     <p className="payment mr-2">{data?.payment}</p>
                   </p>
                 </div>

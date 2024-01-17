@@ -16,7 +16,7 @@ const Table = () => {
               <th>Game</th>
               <th>Time</th>
               <th>Bet Amount</th>
-              <th>Multiplayer</th>
+              <th>Multiplier</th>
               <th>Payout</th>
             </tr>
             <tr>
