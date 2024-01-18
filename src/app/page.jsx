@@ -61,11 +61,11 @@ const Home = () => {
     <Layout>
       <div className="details-wrapper">
         <div className="detail-box">
-          <div className="row">
-            <div className="col-8">
-              <p className="title text-uppercase">Roulette</p>
+          <div className="row align-items-center mb-4">
+            <div className="col-md-8 col-6">
+              <p className="title text-uppercase mb-0">Roulette</p>
             </div>
-            <div className="col-4 text-right ">
+            <div className="col-md-4 col-6 text-right ">
               <img src={"/images/soundon.svg"} />{" "}
               <span className="sound-text">Sound on</span>
             </div>
@@ -100,8 +100,8 @@ const Home = () => {
               <Cards list={list} id="second" />
             </div>
             <div className="card-container mb-lg-0 mb-5">
-              <CardBars image="/images/Coin3.svg" />
-              <Cards list={list} id="third" text="Win 2x" />
+              <CardBars image="/images/Coin3.svg" text="Win 2x" />
+              <Cards list={list} id="third" />
             </div>
           </div>
         </div>

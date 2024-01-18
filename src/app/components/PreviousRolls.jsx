@@ -63,7 +63,7 @@ const PreviousRolls = () => {
       >
         <div className="mask position-absolute z-3 "></div>
       </div> */}
-      <div className="d-flex align-items-center right-coins">
+      <div className="d-flex align-items-center right-coins ">
         <h4 className="rolls-heading mb-0 mx-3">Last 100</h4>
         <img
           src={"/images/Coin1.svg"}

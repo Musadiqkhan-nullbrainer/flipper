@@ -35,14 +35,17 @@ const FlipperNavbar = ({ sidebar, setSidebar, setWindowSize, windowSize }) => {
       <div className="flipper-navbar">
         <div className="d-flex align-items-center mobile">
           {windowSize && (
-            <div className="menu-bars mr-3" onClick={() => showSidebar()}>
+            <div
+              className="menu-bars mr-md-3 mr-0"
+              onClick={() => showSidebar()}
+            >
               <div className="bar" />
               <div className="bar" />
               <div className="bar" />
             </div>
           )}
 
-          <img src={"/images/Flipper-logo.svg"} alt="logo" />
+          <img className="" src={"/images/Flipper-logo.svg"} alt="logo" />
         </div>
         <img className="wallet" src={"/images/wallet.svg"} alt="wallet" />
         <div className="d-flex align-items-center menu-icons">
