@@ -15,6 +15,7 @@ const Home = () => {
   const [counter, setCounter] = useState(12.45);
   const [list, setList] = useState([]);
   const [lists, setLists] = useState([]);
+  const [listed, setListed] = useState([]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -22,21 +23,32 @@ const Home = () => {
         ...list,
         { id: seq + Math.floor(Math.random() * 25) + 1 },
       ];
+      newList.sort((a, b) => b.id - a.id);
       setList(newList);
+
       const newLists = [
         ...list,
         { id: seq + Math.floor(Math.random() * 3) + 1 },
       ];
+      newLists.sort((a, b) => b.id - a.id);
       setLists(newLists);
+
+      const newListed = [
+        ...listed,
+        { id: seq + Math.floor(Math.random() * 13) + 1 },
+      ];
+      newListed.sort((a, b) => b.id - a.id);
+      setListed(newListed);
     }, 5000);
   }, [list, lists]);
 
   useEffect(() => {
+    setNumber(30000);
     const interval = setInterval(() => {
       setCounter((prevCounter) => {
         if (prevCounter <= 0) {
           setHide(true);
-          setNumber((prevNumber) => prevNumber * 1.05);
+          setNumber((prevNumber) => prevNumber / 1.05);
           return 0;
         }
         setHide(false);
@@ -73,7 +85,7 @@ const Home = () => {
           <div
             className="roll d-flex align-items-center position-relative mb-4"
             style={{
-              transition: "none",
+              transition: "none 0s ease 1s",
               backgroundPosition: `${number}px center`,
             }}
           >
@@ -101,7 +113,7 @@ const Home = () => {
             </div>
             <div className="card-container mb-lg-0 mb-5">
               <CardBars image="/images/Coin3.svg" text="Win 2x" />
-              <Cards list={list} id="third" />
+              <Cards list={listed} id="third" />
             </div>
           </div>
         </div>

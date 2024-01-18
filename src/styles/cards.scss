@@ -1,6 +1,7 @@
 .card-container {
   max-width: 312px;
   width: 100%;
+  min-height: 400px;
 }
 .messages {
   background: linear-gradient(0deg, #121c23, #121c23),
@@ -11,7 +12,6 @@
   width: 245px;
   bottom: 0;
   z-index: 100;
-
   padding: 10px;
   right: 0px;
   .messages-container {
@@ -185,16 +185,42 @@
   margin: 0 auto;
   width: 100%;
 }
+.card-container {
+}
+.cards-10::after {
+  opacity: 1 !important;
+}
 .cards {
   width: 100%;
   padding: 16px;
-  max-height: 400px;
-  overflow-y: auto;
+  overflow: hidden;
+  position: relative;
+  max-height: 380px;
   border-radius: 12px;
   background-color: $bg-card;
   font-size: 12px;
   font-weight: 600;
   color: $gray;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity var(--global-transition);
+    transition: opacity var(--global-transition);
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(#16171c),
+      to(transparent)
+    );
+    background: linear-gradient(0, #16171c 0%, transparent 100%);
+    pointer-events: none;
+  }
   .card-header {
     padding: 0px;
     padding-bottom: 8px;

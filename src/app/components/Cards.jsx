@@ -8,18 +8,17 @@ const transition = {
 };
 const Cards = ({ list, id }) => {
   return (
-    <div className="cards">
-      <div className="card-detail-row card-header">
-        <p className="m-0 p-0">17 Bets Total</p>
-        <p className="m-0 p-0 d-flex align-items-center justify-content-center">
-          <img className="mr-2" src={"/images/currency.svg"} alt="$" />
-          139.10
-        </p>
-      </div>
-      <AnimatePresence>
-        {list
-          .sort((a, b) => b.id - a.id)
-          .map((item, index) => {
+    <div className="">
+      <div className={list?.length > 10 ? "cards cards-10" : "cards"}>
+        <div className="card-detail-row card-header">
+          <p className="m-0 p-0">17 Bets Total</p>
+          <p className="m-0 p-0 d-flex align-items-center justify-content-center">
+            <img className="mr-2" src={"/images/currency.svg"} alt="$" />
+            139.10
+          </p>
+        </div>
+        <AnimatePresence>
+          {list.map((item, index) => {
             return (
               <motion.div
                 layout
@@ -38,7 +37,8 @@ const Cards = ({ list, id }) => {
               </motion.div>
             );
           })}
-      </AnimatePresence>
+        </AnimatePresence>
+      </div>
     </div>
   );
 };
