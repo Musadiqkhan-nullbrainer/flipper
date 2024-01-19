@@ -22,43 +22,57 @@ const BetAmount = () => {
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => Number(prevNumber) + 0.01)}
+            onClick={() =>
+              setNumber((prevNumber) => (Number(prevNumber) + 0.01)?.toFixed(2))
+            }
           >
             +0.01
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => Number(prevNumber) + 0.1)}
+            onClick={() =>
+              setNumber((prevNumber) => (Number(prevNumber) + 0.1)?.toFixed(2))
+            }
           >
             +0.1
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => Number(prevNumber) + 1)}
+            onClick={() =>
+              setNumber((prevNumber) => (Number(prevNumber) + 1)?.toFixed(2))
+            }
           >
             +1
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => Number(prevNumber) + 10)}
+            onClick={() =>
+              setNumber((prevNumber) => (Number(prevNumber) + 10)?.toFixed(2))
+            }
           >
             +10
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => Number(prevNumber) + 100)}
+            onClick={() =>
+              setNumber((prevNumber) => (Number(prevNumber) + 100)?.toFixed(2))
+            }
           >
             +100
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => Number(prevNumber) / 2)}
+            onClick={() =>
+              setNumber((prevNumber) => (Number(prevNumber) / 2)?.toFixed(2))
+            }
           >
             1/2
           </div>
           <div
             className="bet-badge cpointer"
-            onClick={() => setNumber((prevNumber) => Number(prevNumber) * 2)}
+            onClick={() =>
+              setNumber((prevNumber) => (Number(prevNumber) * 2)?.toFixed(2))
+            }
           >
             X2
           </div>

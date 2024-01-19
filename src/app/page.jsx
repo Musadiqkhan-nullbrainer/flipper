@@ -21,21 +21,21 @@ const Home = () => {
     setTimeout(() => {
       const newList = [
         ...list,
-        { id: seq + Math.floor(Math.random() * 25) + 1 },
+        { id: seq + Math.floor(Math.random() * 25) + 3 },
       ];
       newList.sort((a, b) => b.id - a.id);
       setList(newList);
 
       const newLists = [
-        ...list,
-        { id: seq + Math.floor(Math.random() * 3) + 1 },
+        ...lists,
+        { id: seq + Math.floor(Math.random() * 39) + 1 },
       ];
       newLists.sort((a, b) => b.id - a.id);
       setLists(newLists);
 
       const newListed = [
         ...listed,
-        { id: seq + Math.floor(Math.random() * 13) + 1 },
+        { id: seq + Math.floor(Math.random() * 10) + 2 },
       ];
       newListed.sort((a, b) => b.id - a.id);
       setListed(newListed);
@@ -85,7 +85,7 @@ const Home = () => {
           <div
             className="roll d-flex align-items-center position-relative mb-4"
             style={{
-              transition: "none 0s ease 1s",
+              transition: "ease 1s",
               backgroundPosition: `${number}px center`,
             }}
           >

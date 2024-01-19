@@ -84,8 +84,12 @@
   border: 1px solid $brdr-card;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
   text-transform: uppercase;
   margin-bottom: 8px;
+  &:hover {
+    background-color: #181f255e;
+  }
   .coin-span {
     color: $off-white;
   }
