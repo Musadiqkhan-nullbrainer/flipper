@@ -50,7 +50,7 @@ const Cards = ({ list, id }) => {
                       />
                       FenRik
                     </p>
-                    <p className="m-0 p-0">{item.id}</p>
+                    <p className="m-0 p-0">{item.id?.toFixed(2)}</p>
                   </div>
                 </motion.div>
               );
