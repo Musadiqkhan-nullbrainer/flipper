@@ -16,39 +16,44 @@ const Home = () => {
   const [list, setList] = useState([]);
   const [lists, setLists] = useState([]);
   const [listed, setListed] = useState([]);
+  const animationDuration = 12000; // 12 seconds
+  const frameRate = 60; // 60 frames per second
 
   useEffect(() => {
     setTimeout(() => {
       const newList = [
         ...list,
-        { id: seq + Math.floor(Math.random() * 25) + 3 },
+        { id: seq + Math.floor(Math.random() * 5) + 3 },
       ];
       newList.sort((a, b) => b.id - a.id);
       setList(newList);
 
       const newLists = [
         ...lists,
-        { id: seq + Math.floor(Math.random() * 39) + 1 },
+        { id: seq + Math.floor(Math.random() * 5) + 1 },
       ];
       newLists.sort((a, b) => b.id - a.id);
       setLists(newLists);
 
       const newListed = [
         ...listed,
-        { id: seq + Math.floor(Math.random() * 10) + 2 },
+        { id: seq + Math.floor(Math.random() * 5) + 1 },
       ];
       newListed.sort((a, b) => b.id - a.id);
       setListed(newListed);
     }, 5000);
   }, [list, lists]);
-
+  const maxLimit = 70000; // Set a max limit to prevent indefinite increase
+  const updateInterval = 50;
   useEffect(() => {
-    setNumber(30000);
     const interval = setInterval(() => {
       setCounter((prevCounter) => {
         if (prevCounter <= 0) {
           setHide(true);
-          setNumber((prevNumber) => prevNumber / 1.05);
+          setNumber((prevNumber) => {
+            const nextNumber = prevNumber * 1.009;
+            return nextNumber > maxLimit ? nextNumber / 1.4 : nextNumber;
+          });
           return 0;
         }
         setHide(false);
@@ -85,17 +90,22 @@ const Home = () => {
           <div
             className="roll d-flex align-items-center position-relative mb-4"
             style={{
-              transition: "ease 1s",
+              transition: "background-position 0.8s ease",
               backgroundPosition: `${number}px center`,
             }}
           >
-            {!hide && (
+            {!hide ? (
               <div className="d-flex position-relative w-100 justify-content-center flex-column align-items-center">
                 <div className="rolling">ROLLING</div>
                 <div className="count">
                   {counter.toFixed(2) < 0 ? 0 : counter.toFixed(2)}
                 </div>
               </div>
+            ) : (
+              <div
+                className="bar m-auto"
+                style={{ height: "100%", width: "2px", background: "red" }}
+              ></div>
             )}
             {!hide && <div className="mask position-absolute z-3 "></div>}
           </div>

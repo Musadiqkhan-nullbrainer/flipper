@@ -346,6 +346,15 @@
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
+@keyframes roll {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
 .roll::after {
   content: "";
   position: absolute;
