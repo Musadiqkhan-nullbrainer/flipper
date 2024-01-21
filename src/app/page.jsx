@@ -51,7 +51,7 @@ const Home = () => {
         if (prevCounter <= 0) {
           setHide(true);
           setNumber((prevNumber) => {
-            const nextNumber = prevNumber * 1.009;
+            const nextNumber = prevNumber * 1.01;
             return nextNumber > maxLimit ? nextNumber / 1.4 : nextNumber;
           });
           return 0;
