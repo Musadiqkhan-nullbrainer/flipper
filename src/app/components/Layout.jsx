@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
             />
             <div className="wrapper-sub-topbar w-100 d-flex">
               <FlipperSideBar sidebar={sidebar} windowSize={windowSize} />
-              <Messages />
+              {showMessages && <Messages />}
               {children}
             </div>
           </>
