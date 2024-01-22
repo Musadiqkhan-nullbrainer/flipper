@@ -103,7 +103,9 @@ const Messages = () => {
                     </span>
                     <span className="name mr-2"> {data?.name}</span>
 
-                    <span className="payment mr-2">{data?.payment}</span>
+                    <span className="payment text-break mr-2">
+                      {data?.payment}
+                    </span>
                   </span>
                 </div>
               </motion.div>
