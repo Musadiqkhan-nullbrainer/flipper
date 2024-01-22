@@ -52,10 +52,10 @@
       outline: none;
       border: none !important;
       font-size: 12px;
-      color: $text-input !important;
+      color: whitesmoke !important;
     }
     input::placeholder {
-      color: $text-input !important;
+      color: whitesmoke !important;
     }
   }
 }
@@ -178,6 +178,7 @@
   flex-wrap: wrap;
   max-width: 1100px;
   margin: 0 auto;
+  min-height: 420px;
   width: 100%;
 }
 .card-wrapper-table {
@@ -194,12 +195,50 @@
 .cards-10::after {
   opacity: 1 !important;
 }
+.cards-100 {
+  width: 100%;
+  padding: 16px;
+  overflow: hidden;
+  position: relative;
+  max-height: 350px;
+  border-radius: 12px;
+  background-color: $bg-card;
+  font-size: 12px;
+  font-weight: 600;
+  color: $gray;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 100% !important;
+    width: 100%;
+    opacity: 1 !important;
+    -webkit-transition: opacity var(--global-transition);
+    transition: opacity var(--global-transition);
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(#16171c),
+      to(transparent)
+    );
+    background: linear-gradient(0, #16171c 0%, transparent 100%);
+    pointer-events: none;
+  }
+  .disabled {
+    pointer-events: none !important;
+  }
+}
+.disabled {
+  pointer-events: none !important;
+}
 .cards {
   width: 100%;
   padding: 16px;
   overflow: hidden;
   position: relative;
-  max-height: 380px;
+  max-height: 350px;
   border-radius: 12px;
   background-color: $bg-card;
   font-size: 12px;
@@ -224,6 +263,9 @@
     );
     background: linear-gradient(0, #16171c 0%, transparent 100%);
     pointer-events: none;
+  }
+  .disabled {
+    pointer-events: none !important;
   }
   .card-header {
     padding: 0px;
@@ -279,7 +321,7 @@
   justify-content: space-between;
 }
 .wallet {
-  margin-left: 3.1rem;
+  margin-left: 22.5rem;
 }
 @media screen and (max-width: 1000px) {
   .details-wrapper {
@@ -308,7 +350,14 @@
     margin-top: 20px;
   }
 }
-
+@media screen and (max-width: 1040px) {
+  .right-coins {
+    margin-top: 20px;
+  }
+  .wallet {
+    margin-left: 15px;
+  }
+}
 @media screen and (max-width: 680px) {
   .wallet {
     margin-left: 0px !important;
@@ -340,7 +389,7 @@
   max-width: 1100px;
   height: 100px;
   margin: 0 auto;
-  background-image: url(https://csgoempire.tv/assets/coins-Fdnv9ROl.png);
+  background-image: url(/images/roll.svg);
   background-size: auto 91.7px;
   background-repeat: repeat-x;
   -webkit-transform: translateZ(0);

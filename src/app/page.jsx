@@ -16,33 +16,32 @@ const Home = () => {
   const [list, setList] = useState([]);
   const [lists, setLists] = useState([]);
   const [listed, setListed] = useState([]);
-  const animationDuration = 12000; // 12 seconds
-  const frameRate = 60; // 60 frames per second
+  const [disabled, setDisabled] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      const newList = [
-        ...list,
-        { id: seq + Math.floor(Math.random() * 5) + 3 },
-      ];
-      newList.sort((a, b) => b.id - a.id);
-      setList(newList);
+    const timeout = setTimeout(() => {
+      if (number != 550) {
+      } else {
+        const newList = [
+          ...list,
+          { id: seq + Math.floor(Math.random() * 6) + 1 },
+        ];
+        newList?.sort((a, b) => b.id - a.id);
+        setList(newList);
 
-      const newLists = [
-        ...lists,
-        { id: seq + Math.floor(Math.random() * 5) + 1 },
-      ];
-      newLists.sort((a, b) => b.id - a.id);
-      setLists(newLists);
+        const newLists = [
+          ...lists,
+          { id: seq + Math.floor(Math.random() * 5) + 1 },
+        ];
+        newLists?.sort((a, b) => b.id - a.id);
+        setLists(newLists);
 
-      const newListed = [
-        ...listed,
-        { id: seq + Math.floor(Math.random() * 5) + 1 },
-      ];
-      newListed.sort((a, b) => b.id - a.id);
-      setListed(newListed);
-    }, 5000);
-  }, [list, lists]);
+        setListed([...listed, { id: seq + Math.floor(Math.random() * 5) + 1 }]);
+      }
+    }, 500);
+
+    return () => clearTimeout(timeout);
+  }, [list, number]);
   const maxLimit = 70000; // Set a max limit to prevent indefinite increase
   const updateInterval = 50;
   useEffect(() => {
@@ -54,7 +53,10 @@ const Home = () => {
             const nextNumber = prevNumber * 1.01;
             return nextNumber > maxLimit ? nextNumber / 1.4 : nextNumber;
           });
+          setDisabled(false);
           return 0;
+        } else {
+          setDisabled(true);
         }
         setHide(false);
         return prevCounter - 0.1;
@@ -66,10 +68,14 @@ const Home = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       if (counter <= 0) {
+        setList([]);
+        setListed([]);
+        setLists([]);
+
         setNumber(550);
         setCounter(12.45);
       }
-    }, 12450); // 12.45 seconds
+    }, 11450); // 12.45 seconds
 
     return () => clearTimeout(timeout);
   }, [counter]);
@@ -114,16 +120,28 @@ const Home = () => {
 
           <div className="card-wrapper flex-md-wrap card-wrapper-padding">
             <div className="card-container mb-lg-0 mb-5">
-              <CardBars image="/images/Coin1.svg" text="Win 2x" />
-              <Cards list={lists} id="first" />
+              <CardBars
+                image="/images/Coin1.svg"
+                text="Win 2x"
+                number={number}
+              />
+              <Cards list={lists} id="first" number={number} />
             </div>
             <div className="card-container mb-lg-0 mb-5">
-              <CardBars image="/images/Coin2.svg" text="Win 14x" />
-              <Cards list={list} id="second" />
+              <CardBars
+                image="/images/Coin2.svg"
+                text="Win 14x"
+                number={number}
+              />
+              <Cards list={list} id="second" number={number} />
             </div>
             <div className="card-container mb-lg-0 mb-5">
-              <CardBars image="/images/Coin3.svg" text="Win 2x" />
-              <Cards list={listed} id="third" />
+              <CardBars
+                image="/images/Coin3.svg"
+                text="Win 2x"
+                number={number}
+              />
+              <Cards list={listed} id="third" number={number} />
             </div>
           </div>
         </div>

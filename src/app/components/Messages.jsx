@@ -7,44 +7,16 @@ const Messages = () => {
       img: "/images/bitmoji.svg",
       name: "Fenrik",
       payment: "ez money",
-      color: "red",
-    },
-    {
-      img: "/images/bitmoji.svg",
-      name: "Fenrik",
-      payment: "ez money",
-      color: "red",
-    },
-    {
-      img: "/images/bitmoji.svg",
-      name: "Fenrik",
-      payment: "ez money",
-      color: "red",
-    },
-    {
-      img: "/images/bitmoji.svg",
-      name: "Fenrik",
-      payment: "ez money",
       color: "orange",
     },
+
     {
       img: "/images/bitmoji.svg",
       name: "Fenrik",
       payment: "ez money",
-      color: "red",
+      color: "green",
     },
-    {
-      img: "/images/bitmoji.svg",
-      name: "Fenrik",
-      payment: "ez money",
-      color: "golden",
-    },
-    {
-      img: "/images/bitmoji.svg",
-      name: "Fenrik",
-      payment: "ez money",
-      color: "red",
-    },
+
     {
       img: "/images/bitmoji.svg",
       name: "Fenrik",
@@ -72,12 +44,10 @@ const Messages = () => {
   ];
   let seq = 0;
   const [newData, setNewData] = useState([]);
+  const [message, setMessage] = useState([]);
   useEffect(() => {
-    setTimeout(() => {
-      const newList = [...newData, data[seq++]];
-      setNewData(newList);
-    }, 5000);
-  }, [newData]);
+    setNewData(data);
+  }, []);
 
   const transition = {
     type: "spring", // This can be 'tween' as well, depending on the effect you want
@@ -85,6 +55,24 @@ const Messages = () => {
     bounce: 0.03, // For spring type, control the 'bounce'
     ease: "easeInOut", // Easing function for smoothness
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setNewData([
+      ...newData,
+      {
+        id: message,
+        img: "/images/bitmoji.svg",
+        name: "Fenrik",
+        payment: "ez money",
+        color: "red",
+      },
+    ]);
+    setMessage("");
+  };
+
+  console.log(newData);
+
   return (
     <div className="messages">
       <div className="messages-container">
@@ -96,7 +84,7 @@ const Messages = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition }}
                 exit={{ opacity: 0, transition }}
-                key={data?.name}
+                key={data?.message}
               >
                 <div className="mt-3">
                   <p className="m-0 p-0 d-flex align-items-center ">
@@ -116,8 +104,17 @@ const Messages = () => {
         </AnimatePresence>
       </div>
       <div className="mt-4 messages-input d-flex align-items-center justify-content-between">
-        <input className="" type="text" placeholder="Type Message" />
-        <img src="/images/more.svg" className="cpointer" />
+        <form onSubmit={handleSubmit} className="w-100 d-flex">
+          <input
+            className=""
+            type="text"
+            value={message}
+            onChange={(e) => setMessage(e.currentTarget.value)}
+            placeholder="Type Message"
+            style={{ width: "90%" }}
+          />
+          <img src="/images/more.svg" className="cpointer" />
+        </form>
       </div>
     </div>
   );
