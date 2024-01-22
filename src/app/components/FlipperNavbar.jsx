@@ -4,9 +4,15 @@ import { useEffect, useState } from "react";
 import Messages from "./Messages";
 
 // eslint-disable-next-line react/prop-types
-const FlipperNavbar = ({ sidebar, setSidebar, setWindowSize, windowSize }) => {
+const FlipperNavbar = ({
+  sidebar,
+  setSidebar,
+  setWindowSize,
+  windowSize,
+  showMessages,
+  setShowMessages,
+}) => {
   const showSidebar = () => setSidebar(!sidebar);
-  const [showMessages, setShowMessages] = useState(false);
   const handleMessages = () => setShowMessages(!showMessages);
 
   const updateWindowDimensions = () => {
@@ -64,7 +70,7 @@ const FlipperNavbar = ({ sidebar, setSidebar, setWindowSize, windowSize }) => {
           <img src={"/images/user.svg"} alt="user" className="mx-2" />
         </div>
 
-        {showMessages && <Messages />}
+        {/* {showMessages && <Messages />} */}
       </div>
     </>
   );

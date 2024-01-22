@@ -71,8 +71,6 @@ const Messages = () => {
     setMessage("");
   };
 
-  console.log(newData);
-
   return (
     <div className="messages">
       <div className="messages-container">
