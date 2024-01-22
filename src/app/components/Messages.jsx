@@ -64,7 +64,7 @@ const Messages = () => {
         id: message,
         img: "/images/bitmoji.svg",
         name: "Fenrik",
-        payment: "ez money",
+        payment: message,
         color: "red",
       },
     ]);
@@ -87,16 +87,26 @@ const Messages = () => {
                 key={data?.message}
               >
                 <div className="mt-3">
-                  <p className="m-0 p-0 d-flex align-items-center ">
+                  <span className="m-0 p-0 ">
                     <img className="mr-2" src={data?.img} alt="F" />
-                    <div
-                      className="color mr-2"
-                      style={{ backgroundColor: data?.color }}
-                    ></div>
-                    <p className="name mr-2"> {data?.name}</p>
+                    <span
+                      style={{
+                        display: "inline-block",
+                        verticalAlign: "middle",
+                      }}
+                    >
+                      {" "}
+                      <div
+                        className="color mr-2"
+                        style={{
+                          backgroundColor: data?.color,
+                        }}
+                      ></div>
+                    </span>
+                    <span className="name mr-2"> {data?.name}</span>
 
-                    <p className="payment mr-2">{data?.payment}</p>
-                  </p>
+                    <span className="payment mr-2">{data?.payment}</span>
+                  </span>
                 </div>
               </motion.div>
             );
