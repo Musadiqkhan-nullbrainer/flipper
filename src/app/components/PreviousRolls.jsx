@@ -41,7 +41,7 @@ const PreviousRolls = () => {
 
   return (
     <div className="previous-roll-wrapper">
-      <h4 className="rolls-heading mb-0">Previous rolls</h4>
+      <h4 className="rolls-heading top-rolls-heading mb-0">Previous rolls</h4>
       <div
         className="d-flex alig-items-center justify-content-center icon-container position-relative flex-wrap"
         style={{ width: "400px", marginLeft: "-65px" }}
