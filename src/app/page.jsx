@@ -41,7 +41,7 @@ const Home = () => {
 
     return () => clearTimeout(timeout);
   }, [list, number]);
-  const newNum = 6000;
+  const newNum = 6000 + Math.random() * 1500;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -52,8 +52,8 @@ const Home = () => {
           setNumber((prevNumber) => {
             return prevNumber === 550
               ? newNum / 1.01
-              : prevNumber < 100
-              ? prevNumber / 1.001
+              : prevNumber < 320
+              ? prevNumber
               : prevNumber / 1.01;
 
             // const nextNumber = prevNumber * 1.02;
@@ -74,7 +74,9 @@ const Home = () => {
         setList([]);
         setListed([]);
         setLists([]);
-        setCounter(12.45);
+        setTimeout(() => {
+          setCounter(12.45);
+        }, 500);
 
         setNumber(550);
 
