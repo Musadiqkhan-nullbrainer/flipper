@@ -581,8 +581,14 @@
       margin-top: 10px;
     }
   }
-  .icon-container {
+  .icon-container,
+  .rolls-heading {
     margin-top: 10px !important;
+  }
+}
+@media screen and (max-width: 703px) {
+  .icon-container::before {
+    left: 68px !important;
   }
 }
 @media screen and (max-width: 703px) {
