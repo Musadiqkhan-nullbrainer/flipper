@@ -53,7 +53,9 @@ const FlipperNavbar = ({
 
           <img className="" src={"/images/Flipper-logo.svg"} alt="logo" />
         </div>
-        <img className="wallet" src={"/images/wallet.svg"} alt="wallet" />
+        <div className="wallet">
+          <img src={"/images/wallet.svg"} alt="wallet" />
+        </div>
         <div className="d-flex align-items-center menu-icons">
           <img src={"/images/search.svg"} alt="search" className="mx-2" />
           <img

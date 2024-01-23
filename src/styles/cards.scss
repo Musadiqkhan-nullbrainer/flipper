@@ -320,9 +320,9 @@
 .menu-icons {
   justify-content: space-between;
 }
-.wallet {
-  margin-left: 22.5rem;
-}
+// .wallet {
+//   margin-left: 22.5rem;
+// }
 @media screen and (max-width: 1000px) {
   .details-wrapper {
     width: calc(100% - 0px);
@@ -354,15 +354,28 @@
   .right-coins {
     margin-top: 20px;
   }
-  .wallet {
-    margin-left: 15px;
-  }
+  // .wallet {
+  //   margin-left: 15px;
+  // }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
+  .flipper-navbar {
+    padding: 12px 10px 12px 10px !important;
+    .mobile {
+      width: 90%;
+      margin-bottom: 20px;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
   .wallet {
     margin-left: 0px !important;
-    margin-top: 20px;
     margin: 0 auto !important;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
   }
   .messages {
     height: calc(100vh - 185px) !important;
@@ -582,17 +595,6 @@
       width: 100%;
       div {
         margin-bottom: 15px;
-      }
-    }
-  }
-  .flipper-navbar {
-    padding: 12px 10px 12px 10px !important;
-    .mobile {
-      width: 90%;
-      margin-bottom: 20px;
-
-      img {
-        margin: 0 auto;
       }
     }
   }
