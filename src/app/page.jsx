@@ -16,7 +16,6 @@ const Home = () => {
   const [list, setList] = useState([]);
   const [lists, setLists] = useState([]);
   const [listed, setListed] = useState([]);
-  const [disabled, setDisabled] = useState(false);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -42,21 +41,25 @@ const Home = () => {
 
     return () => clearTimeout(timeout);
   }, [list, number]);
-  const maxLimit = 70000; // Set a max limit to prevent indefinite increase
-  const updateInterval = 50;
+  const newNum = 6000;
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCounter((prevCounter) => {
         if (prevCounter <= 0) {
+          const maxLimit = 15000;
           setHide(true);
           setNumber((prevNumber) => {
-            const nextNumber = prevNumber * 1.01;
-            return nextNumber > maxLimit ? nextNumber / 1.4 : nextNumber;
+            return prevNumber === 550
+              ? newNum / 1.01
+              : prevNumber < 100
+              ? prevNumber / 1.001
+              : prevNumber / 1.01;
+
+            // const nextNumber = prevNumber * 1.02;
+            // return nextNumber > maxLimit ? nextNumber / 1.4 : nextNumber;
           });
-          setDisabled(false);
           return 0;
-        } else {
-          setDisabled(true);
         }
         setHide(false);
         return prevCounter - 0.1;
@@ -71,11 +74,13 @@ const Home = () => {
         setList([]);
         setListed([]);
         setLists([]);
+        setCounter(12.45);
 
         setNumber(550);
-        setCounter(12.45);
+
+        return () => clearTimeout(newTimeout);
       }
-    }, 11450); // 12.45 seconds
+    }, 12450); // 12.45 seconds
 
     return () => clearTimeout(timeout);
   }, [counter]);
@@ -96,8 +101,8 @@ const Home = () => {
           <div
             className="roll d-flex align-items-center position-relative mb-4"
             style={{
-              transition: "background-position 0.8s ease",
               backgroundPosition: `${number}px center`,
+              transition: "none 0s ease 0s",
             }}
           >
             {!hide ? (
