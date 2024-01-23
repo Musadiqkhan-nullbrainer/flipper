@@ -50,7 +50,7 @@ const Home = () => {
           const maxLimit = 15000;
           setHide(true);
           setNumber((prevNumber) => {
-            return prevNumber === 550 ? newNum / 1.035 : prevNumber / 1.035;
+            return prevNumber === 550 ? newNum / 1.04 : prevNumber / 1.04;
 
             // const nextNumber = prevNumber * 1.02;
             // return nextNumber > maxLimit ? nextNumber / 1.4 : nextNumber;
