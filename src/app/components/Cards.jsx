@@ -14,7 +14,7 @@ const Cards = ({ list, id, number }) => {
     <div className="">
       <div
         className={
-          number != "550" && list?.length == 0
+          number != "550" && list?.length > 0
             ? "cards cards-100"
             : list?.length > 10
             ? "cards cards-10"
