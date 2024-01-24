@@ -20,6 +20,19 @@
     overflow-y: auto;
     margin-bottom: 30px;
   }
+  .messages-container::-webkit-scrollbar {
+    width: 10px; /* width of the entire scrollbar */
+  }
+
+  .messages-container::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+  }
+
+  .messages-container::-webkit-scrollbar-thumb {
+    background-color: #333541; /* color of the scroll thumb */
+    border-radius: 10px; /* roundness of the scroll thumb */
+    border: 1px solid #333541; /* creates padding around scroll thumb */
+  }
   .name {
     margin-bottom: 0 !important;
     color: $light-blue !important;
