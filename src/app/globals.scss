@@ -5,18 +5,31 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 @font-face {
-  font-family: "Nunito Sans";
-  src: url("../../public/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf");
+	font-family: "Nunito Sans";
+	src: url("../../public/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf");
+}
+body::-webkit-scrollbar {
+	width: 10px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+	background: #0e131b; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #333541; /* color of the scroll thumb */
+	border-radius: 10px; /* roundness of the scroll thumb */
+	border: 1px solid #333541; /* creates padding around scroll thumb */
 }
 body {
-  font-family: "Nunito Sans" !important;
-  width: 100%;
-  min-height: 100vh;
-  background: $body-black;
+	font-family: "Nunito Sans" !important;
+	width: 100%;
+	min-height: 100vh;
+	background: $body-black;
 }
 
 //-----------------Common Classes---------------------------
@@ -25,99 +38,99 @@ body {
 }
 
 .min-vh-90 {
-  min-height: 90vh;
+	min-height: 90vh;
 }
 
 .Logo {
-  padding: 25px 0px 0px 25px;
-  img {
-    max-width: 100%;
-    width: 151px;
-    height: 42px;
-  }
+	padding: 25px 0px 0px 25px;
+	img {
+		max-width: 100%;
+		width: 151px;
+		height: 42px;
+	}
 }
 
 //----------Inner Wrapper=----------------
 
 .wrapper-sub-topbar {
-  background-color: $body-black !important;
+	background-color: $body-black !important;
 }
 
 //--------Cursor pointer-----------------
 .cpointer {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 //---------------- Block Heading ------------------------
 
 .table {
-  border-collapse: collapse;
-  width: 100%;
-  font-family: Nunito Sans;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #bfd1ea !important;
-  .red {
-    color: $red !important;
-  }
-  .success {
-    color: $success !important;
-  }
+	border-collapse: collapse;
+	width: 100%;
+	font-family: Nunito Sans;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 21px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #bfd1ea !important;
+	.red {
+		color: $red !important;
+	}
+	.success {
+		color: $success !important;
+	}
 }
 
 th {
-  font-family: Nunito Sans;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #3d4d65;
+	font-family: Nunito Sans;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 21px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #3d4d65;
 }
 th,
 td {
-  text-align: left;
-  padding: 8px;
-  border-top: none !important;
-  min-width: 205px;
+	text-align: left;
+	padding: 8px;
+	border-top: none !important;
+	min-width: 205px;
 }
 
 tr:nth-child(even) {
-  background-color: $table-even-bg;
-  td {
-    background-color: $table-even-bg;
-    border-top: none !important;
-    color: #bfd1ea !important;
-    border-bottom: none !important;
-  }
-  th {
-    background-color: $table-even-bg;
-    border-top: none !important;
-    color: #3d4d65;
-    border-bottom: none !important;
-  }
+	background-color: $table-even-bg;
+	td {
+		background-color: $table-even-bg;
+		border-top: none !important;
+		color: #bfd1ea !important;
+		border-bottom: none !important;
+	}
+	th {
+		background-color: $table-even-bg;
+		border-top: none !important;
+		color: #3d4d65;
+		border-bottom: none !important;
+	}
 }
 tr:nth-child(odd) {
-  background-color: $bg-black;
-  td {
-    background-color: $bg-black;
-    border-top: none !important;
-    color: #bfd1ea !important;
-    border-bottom: none !important;
-  }
-  th {
-    background-color: $bg-black;
-    border-top: none !important;
-    border-bottom: none !important;
-    color: #3d4d65;
-  }
+	background-color: $bg-black;
+	td {
+		background-color: $bg-black;
+		border-top: none !important;
+		color: #bfd1ea !important;
+		border-bottom: none !important;
+	}
+	th {
+		background-color: $bg-black;
+		border-top: none !important;
+		border-bottom: none !important;
+		color: #3d4d65;
+	}
 }
 .red {
-  color: $red !important;
+	color: $red !important;
 }
 .success {
-  color: $success !important;
+	color: $success !important;
 }
