@@ -84,13 +84,20 @@ const Messages = () => {
                 exit={{ opacity: 0, transition }}
                 key={data?.message}
               >
-                <div className="mt-3">
+                <div className="mt-3 d-flex align-items-start">
+                  <img
+                    className="mr-2"
+                    src={data?.img}
+                    alt="F"
+                    style={{ marginTop: "3px" }}
+                  />
+
                   <span className="m-0 p-0 ">
-                    <img className="mr-2" src={data?.img} alt="F" />
                     <span
                       style={{
                         display: "inline-block",
                         verticalAlign: "middle",
+                        lineHeight: "1.25rem",
                       }}
                     >
                       {" "}

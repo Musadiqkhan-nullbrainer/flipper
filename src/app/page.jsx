@@ -41,7 +41,7 @@ const Home = () => {
 
     return () => clearTimeout(timeout);
   }, [list, number]);
-  const newNum = 4000 + Math.random() * 1500;
+  const newNum = 5000 + Math.random() * 6500;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -50,7 +50,7 @@ const Home = () => {
           const maxLimit = 15000;
           setHide(true);
           setNumber((prevNumber) => {
-            return prevNumber === 550 ? newNum / 1.03 : prevNumber / 1.03;
+            return prevNumber === 550 ? newNum / 1.06 : prevNumber / 1.06;
 
             // const nextNumber = prevNumber * 1.02;
             // return nextNumber > maxLimit ? nextNumber / 1.4 : nextNumber;
@@ -67,11 +67,12 @@ const Home = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       if (counter <= 0) {
+        setNumber(550);
+
         setList([]);
         setListed([]);
         setLists([]);
         setTimeout(() => {}, 500);
-        setNumber(550);
 
         setCounter(12.45);
 
@@ -97,16 +98,23 @@ const Home = () => {
           </div>
           <div
             className="roll d-flex align-items-center position-relative mb-4"
-            style={{
-              backgroundPosition: `${number}px center`,
-              transition: "none 0s ease 0s",
-            }}
+            style={
+              number === 550 || counter == 12.45
+                ? {
+                    backgroundPosition: `550px center`,
+                    transition: "background-position 0.9s ease",
+                  }
+                : {
+                    backgroundPosition: `${number}px center`,
+                    transition: "none 0s ease 0s",
+                  }
+            }
           >
             {!hide ? (
               <div className="d-flex position-relative w-100 justify-content-center flex-column align-items-center">
                 <div className="rolling">ROLLING</div>
                 <div className="count">
-                  {counter.toFixed(2) < 0 ? 0 : counter.toFixed(2)}
+                  {counter.toFixed(2) < 0.01 ? 0 : counter.toFixed(2)}
                 </div>
               </div>
             ) : (
