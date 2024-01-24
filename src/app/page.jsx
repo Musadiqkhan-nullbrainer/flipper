@@ -41,7 +41,7 @@ const Home = () => {
 
     return () => clearTimeout(timeout);
   }, [list, number]);
-  const newNum = 6000 + Math.random() * 1500;
+  const newNum = 4000 + Math.random() * 1500;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -50,7 +50,7 @@ const Home = () => {
           const maxLimit = 15000;
           setHide(true);
           setNumber((prevNumber) => {
-            return prevNumber === 550 ? newNum / 1.04 : prevNumber / 1.04;
+            return prevNumber === 550 ? newNum / 1.03 : prevNumber / 1.03;
 
             // const nextNumber = prevNumber * 1.02;
             // return nextNumber > maxLimit ? nextNumber / 1.4 : nextNumber;
@@ -70,11 +70,10 @@ const Home = () => {
         setList([]);
         setListed([]);
         setLists([]);
-        setTimeout(() => {
-          setCounter(12.45);
-        }, 500);
-
+        setTimeout(() => {}, 500);
         setNumber(550);
+
+        setCounter(12.45);
 
         return () => clearTimeout(newTimeout);
       }
