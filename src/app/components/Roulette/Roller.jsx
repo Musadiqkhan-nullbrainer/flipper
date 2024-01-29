@@ -328,7 +328,7 @@ const Roller = ({
 				prizeIndex={prizeIndex}
 				start={start}
 				onPrizeDefined={handlePrizeDefined}
-				spinningTime={3}
+				spinningTime={5}
 				options={{ stopInCenter: true, withoutAnimation: true }}
 			/>
 		</>
