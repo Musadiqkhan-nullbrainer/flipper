@@ -21,7 +21,11 @@ const Home = () => {
 	const [betWon, setBetWon] = useState(null);
 	const [previousRolls, setPreviousRolls] = useState([]);
 	const [winValue, setWinValue] = useState(null);
-
+	useEffect(() => {
+		if (!hide) {
+			setBetWon(null);
+		}
+	}, [hide]);
 	useEffect(() => {
 		const timeout = setTimeout(() => {
 			if (number != 550) {

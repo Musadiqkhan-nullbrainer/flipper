@@ -4,6 +4,351 @@ import "react-roulette-pro/dist/index.css";
 
 const prizes = [
 	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	// {
+	// 	image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+	// 	text: "win2x",
+	// },
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
 		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
 		text: "win2xSilver",
 	},
@@ -223,6 +568,147 @@ const prizes = [
 		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
 		text: "win14x",
 	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+
 	{
 		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
 		text: "win2x",
@@ -232,6 +718,7 @@ const prizes = [
 		text: "win2x",
 	},
 ];
+const winPrizeIndex = 2;
 const reproductionArray = (array = [], length = 0) => [
 	...Array(length)
 		.fill("_")
@@ -248,11 +735,13 @@ const reproducedPrizeList = [
 const generateId = () =>
 	Date.now().toString(36) + Math.random().toString(36).substring(2);
 
-const prizeList = prizes.map((prize) => ({
+const prizeList = reproducedPrizeList.map((prize) => ({
 	...prize,
-	id: generateId(),
+	id:
+		typeof crypto.randomUUID === "function"
+			? crypto.randomUUID()
+			: generateId(),
 }));
-
 const Roller = ({
 	hide,
 	setPreviousRolls,
@@ -262,48 +751,34 @@ const Roller = ({
 	setBetWon,
 }) => {
 	const [start, setStart] = useState(false);
-	const [prizeIndex, setPrizeIndex] = useState(0);
 	const [count, setCount] = useState(0);
+	const prizeIndex = Math.floor(prizes.length) + winPrizeIndex;
 	const handleStart = () => {
+		setStart(true);
 		setCount(0);
 		/* Here we spinning the roulette to the end
     because we neeed time to get a `prizeIndex`
     from a server */
-		setPrizeIndex(prizeList.length / 2);
+		// setPrizeIndex(prizeList.length / 2);
 	};
-
 	useEffect(() => {
-		if (prizeIndex === 0) {
-			return;
-		} else {
-			if (prizes[prizeIndex]?.text) {
-				setPreviousRolls([...previousRolls, prizes[prizeIndex]?.text]);
-				setWinValue(prizes[prizeIndex]?.text);
-			}
-		}
-		setStart(true);
-		// Here you can trigger your socket event
+		console.log("WInprize: ", winPrizeIndex);
+	}, [winPrizeIndex]);
+	useEffect(() => {
+		setPreviousRolls([...previousRolls, prizeList[prizeIndex]?.text]);
+		console.log("win value set bet: ", prizeList[prizeIndex]?.text);
+
+		setWinValue(prizeList[prizeIndex]?.text);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [prizeIndex]);
 	useEffect(() => {
 		console.log("win value: ", winValue);
 	}, [winValue]);
 	// Socket imitation
-	useEffect(() => {
-		if (start === false) {
-			return;
-		}
-		// Server delay imitation
-		const timeout = setTimeout(() => {
-			const winPrizeIndex = Math.floor(Math.random() * prizes.length);
-			setPrizeIndex(winPrizeIndex);
-		}, 1000);
-		return () => {
-			clearTimeout(timeout);
-		};
-	}, [start]);
 
 	const handlePrizeDefined = () => {
 		console.log("🥳 Prize defined! 🥳");
+		setStart(false);
 		setTimeout(() => {
 			if (count === 0) {
 				const audio = new Audio("/audio/confirm-audio.wav");
