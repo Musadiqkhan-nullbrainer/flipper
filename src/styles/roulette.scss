@@ -3,17 +3,35 @@
 	background-color: none !important;
 	background: none !important;
 }
-.roulette-pro-regular-image-wrapper {
-	height: 100px !important;
-}
-.roulette-pro-regular-design-prize-item-horizontal {
-	.roulette-pro-regular-prize-item {
-		width: 100px !important;
-		height: 100px !important;
-	}
-}
+// .roulette-pro-regular-image-wrapper {
+// 	height: 100px !important;
+// }
+// .roulette-pro-regular-design-prize-item-horizontal {
+// 	.roulette-pro-regular-prize-item {
+// 		width: 100px !important;
+// 		height: 100px !important;
+// 	}
+// }
 // .roulette-pro-wrapper{
 //     .roulette-pro-regular-design-top{
 //         background: red;
 //     }
 // }
+
+.roulette-wrap {
+	height: 100px !important;
+	.roulette-list-wrap {
+		width: 100px !important;
+		height: 100px !important;
+	}
+	.prize-item-roulette {
+		width: 100px;
+		height: 100px;
+		.roulette-pro-regular-prize-item {
+			img {
+				width: 100px !important;
+				height: 100px !important;
+			}
+		}
+	}
+}

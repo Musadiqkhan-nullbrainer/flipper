@@ -117,23 +117,22 @@ const Home = () => {
 						<div
 							className="roll bg-img d-flex align-items-center position-relative mb-5"
 							style={{
-								backgroundPosition: `550px center`,
-								transition: "background-position 0.9s ease",
+								backgroundPosition: `center`,
 							}}>
 							<div
 								className="d-flex position-relative w-100 justify-content-center flex-column align-items-center"
 								style={{ background: "transparent" }}>
-								<div className="rolling" style={{ background: "transparent" }}>
-									ROLLING
-								</div>
-								<div className="count" style={{ background: "transparent" }}>
+								<div className="rolling">ROLLING</div>
+								<div className="count">
 									{counter.toFixed(2) < 0.01 ? 0 : counter.toFixed(2)}
 								</div>
 							</div>
 							{/* {!hide && <div className="mask position-absolute z-3 "></div>} */}
 						</div>
 					) : (
-						<div className="roll  position-relative mb-5">
+						<div
+							className="roll  position-relative mb-5"
+							style={{ height: "auto" }}>
 							<Roller
 								hide={hide}
 								setBetWon={setBetWon}

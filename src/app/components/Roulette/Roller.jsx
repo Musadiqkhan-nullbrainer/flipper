@@ -718,7 +718,7 @@ const prizes = [
 		text: "win2x",
 	},
 ];
-const winPrizeIndex = 2;
+
 const reproductionArray = (array = [], length = 0) => [
 	...Array(length)
 		.fill("_")
@@ -752,42 +752,29 @@ const Roller = ({
 }) => {
 	const [start, setStart] = useState(false);
 	const [count, setCount] = useState(0);
-	const prizeIndex = Math.floor(prizes.length) + winPrizeIndex;
+	const [prizeIndex, setPrizeIndex] = useState(
+		Math.floor(Math.random() * prizes.length)
+	);
 	const handleStart = () => {
 		setStart(true);
 		setCount(0);
-		/* Here we spinning the roulette to the end
-    because we neeed time to get a `prizeIndex`
-    from a server */
-		// setPrizeIndex(prizeList.length / 2);
 	};
-	useEffect(() => {
-		console.log("WInprize: ", winPrizeIndex);
-	}, [winPrizeIndex]);
+
 	useEffect(() => {
 		setPreviousRolls([...previousRolls, prizeList[prizeIndex]?.text]);
-		console.log("win value set bet: ", prizeList[prizeIndex]?.text);
-
 		setWinValue(prizeList[prizeIndex]?.text);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [prizeIndex]);
-	useEffect(() => {
-		console.log("win value: ", winValue);
-	}, [winValue]);
-	// Socket imitation
 
 	const handlePrizeDefined = () => {
-		console.log("🥳 Prize defined! 🥳");
-		setStart(false);
+		// console.log("🥳 Prize defined! 🥳");
 		setTimeout(() => {
 			if (count === 0) {
 				const audio = new Audio("/audio/confirm-audio.wav");
 				audio.loop = false;
 				audio.play();
 				setCount(count + 1);
-				console.log("win value set bet: ", prizeIndex);
 				if (winValue) {
-					console.log("win value: ", winValue);
 					setBetWon(winValue);
 				}
 			}
@@ -803,8 +790,15 @@ const Roller = ({
 				prizeIndex={prizeIndex}
 				start={start}
 				onPrizeDefined={handlePrizeDefined}
-				spinningTime={5}
-				options={{ stopInCenter: true, withoutAnimation: true }}
+				spinningTime={3}
+				// options={{
+				// 	withoutAnimation: true,
+				// }}
+				classes={{
+					prizeItem: "prize-item-roulette",
+					wrapper: "roulette-wrap",
+					prizeListWrapper: "roulette-list-wrap",
+				}}
 			/>
 		</>
 	);
