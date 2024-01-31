@@ -23,7 +23,7 @@ const PreviousRolls = ({ previousRolls, hide }) => {
 				document.querySelectorAll(".icon").forEach((el) => {
 					el.classList.remove("fade-out");
 				});
-				setIcons((prevIcons) => previousRolls.slice(-11));
+				setIcons((prevIcons) => previousRolls.slice(-10));
 			} else {
 				setIcons([...previousRolls]);
 			}
