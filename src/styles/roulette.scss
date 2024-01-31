@@ -17,20 +17,22 @@
 //         background: red;
 //     }
 // }
-
-.roulette-wrap {
-	height: 100px !important;
-	.roulette-list-wrap {
-		width: 100px !important;
-		height: 100px !important;
-	}
-	.prize-item-roulette {
-		width: 100px;
+.roll {
+	.roulette-wrap {
 		height: 100px;
-		.roulette-pro-regular-prize-item {
-			img {
-				width: 100px !important;
-				height: 100px !important;
+		.roulette-list-wrap {
+			// width: 100px;
+			height: 100px;
+			// left: -20613.5px;
+		}
+		.prize-item-roulette {
+			// width: 100px;
+			height: 100px;
+			.roulette-pro-regular-prize-item {
+				img {
+					width: 100px;
+					height: 100px;
+				}
 			}
 		}
 	}
