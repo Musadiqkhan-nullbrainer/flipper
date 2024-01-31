@@ -5,7 +5,6 @@ const PreviousRolls = ({ previousRolls, hide }) => {
 		black: 0,
 		golden: 0,
 	});
-
 	const [icons, setIcons] = useState(
 		previousRolls.length > 0 ? [...previousRolls] : []
 	);
@@ -22,23 +21,17 @@ const PreviousRolls = ({ previousRolls, hide }) => {
 			} else {
 				setIcons([...previousRolls]);
 			}
-			console.log("Previous rolls: ", previousRolls);
 		}
 	}, [hide, previousRolls]);
 
 	return (
 		<div className="previous-roll-wrapper">
-			<h4 className="rolls-heading top-rolls-heading mb-0">Previous rolls</h4>
+			<h4 className="rolls-heading top-rolls-heading mb-2">Previous rolls</h4>
 			<div
-				className="d-flex alig-items-center justify-content-center icon-container position-relative flex-wrap"
-				style={{
-					width: "400px",
-					marginLeft: "-65px",
-					padding: "2px 0px",
-					paddingLeft: "7px",
-				}}>
+				className={`d-flex align-items-center justify-content-start ml-3 mb-2 icon-container position-relative flex-wrap`}
+				style={{ padding: "2px 0px" }}>
 				{icons.map((icon, index) => (
-					<div key={index} className="icon">
+					<div key={index} className={`icon `}>
 						<img
 							src={
 								icon === "win2x"
@@ -53,7 +46,7 @@ const PreviousRolls = ({ previousRolls, hide }) => {
 				))}
 			</div>
 
-			<div className="d-flex align-items-center right-coins ">
+			<div className="d-flex align-items-center right-coins px-2 pt-2 mb-2 pt-md-0">
 				<h4 className="rolls-heading mb-0 mx-3">Last 100</h4>
 				<img
 					src={"/images/Coin1.svg"}

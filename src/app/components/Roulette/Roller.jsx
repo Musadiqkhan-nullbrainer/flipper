@@ -4,8 +4,8 @@ import "react-roulette-pro/dist/index.css";
 
 const prizes = [
 	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
 	},
 
 	{
@@ -19,682 +19,6 @@ const prizes = [
 	{
 		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
 		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	// {
-	// 	image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-	// 	text: "win2x",
-	// },
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
 	},
 	{
 		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
@@ -710,12 +34,85 @@ const prizes = [
 	},
 
 	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
 		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
 		text: "win2x",
 	},
 	{
 		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
 		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
 	},
 ];
 
@@ -749,6 +146,7 @@ const Roller = ({
 	winValue,
 	setWinValue,
 	setBetWon,
+	sound,
 }) => {
 	const [start, setStart] = useState(false);
 	const [count, setCount] = useState(0);
@@ -772,7 +170,7 @@ const Roller = ({
 			if (count === 0) {
 				const audio = new Audio("/audio/confirm-audio.wav");
 				audio.loop = false;
-				audio.play();
+				sound && audio.play();
 				setCount(count + 1);
 				if (winValue) {
 					setBetWon(winValue);
@@ -780,6 +178,23 @@ const Roller = ({
 			}
 		}, 1000);
 	};
+	useEffect(() => {
+		const imageWrappers = document.querySelectorAll(
+			".roulette-pro-regular-image-wrapper"
+		);
+
+		// Iterate through each image wrapper
+		imageWrappers.forEach((wrapper) => {
+			// Get the image element within the current wrapper
+			const image = wrapper.querySelector("img");
+
+			// Clone the image element
+			const clonedImage = image.cloneNode(true);
+
+			// Append the cloned image to the wrapper (making it double)
+			wrapper.appendChild(clonedImage);
+		});
+	}, []);
 	useEffect(() => {
 		hide && handleStart();
 	}, [hide]);
@@ -790,10 +205,8 @@ const Roller = ({
 				prizeIndex={prizeIndex}
 				start={start}
 				onPrizeDefined={handlePrizeDefined}
-				spinningTime={3}
-				// options={{
-				// 	withoutAnimation: true,
-				// }}
+				spinningTime={5}
+				options={{ stopInCenter: false }}
 				classes={{
 					prizeItem: "prize-item-roulette",
 					wrapper: "roulette-wrap",

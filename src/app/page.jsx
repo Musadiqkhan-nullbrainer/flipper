@@ -57,6 +57,7 @@ const Home = () => {
 			setCounter((prevCounter) => {
 				if (prevCounter <= 0) {
 					const maxLimit = 15000;
+
 					setHide(true);
 					setNumber((prevNumber) => {
 						return prevNumber === 550 ? newNum / 1.06 : prevNumber / 1.06;
@@ -90,7 +91,23 @@ const Home = () => {
 		}, 12450); // 12.45 seconds
 		return () => clearTimeout(timeout);
 	}, [counter]);
+	useEffect(() => {
+		const imageWrappers = document.querySelectorAll(
+			".roulette-pro-regular-image-wrapper"
+		);
 
+		// Iterate through each image wrapper
+		imageWrappers.forEach((wrapper) => {
+			// Get the image element within the current wrapper
+			const image = wrapper.querySelector("img");
+
+			// Clone the image element
+			const clonedImage = image.cloneNode(true);
+
+			// Append the cloned image to the wrapper (making it double)
+			wrapper.appendChild(clonedImage);
+		});
+	}, []);
 	return (
 		<Layout>
 			<div className="details-wrapper">
@@ -99,11 +116,11 @@ const Home = () => {
 						<div className="col-md-8 col-6">
 							<p className="title text-uppercase mb-0">Roulette</p>
 						</div>
-						<div className="col-md-4 col-6 text-right ">
+						<div className="col-md-4 col-6 d-flex justify-content-end">
 							<div
 								className="cpointer"
+								style={{ width: "fit-content" }}
 								onClick={() => {
-									localStorage.setItem("sound", !sound);
 									setSound(!sound);
 								}}>
 								<img src={"/images/soundon.svg"} />{" "}
@@ -140,6 +157,7 @@ const Home = () => {
 								winValue={winValue}
 								setPreviousRolls={setPreviousRolls}
 								previousRolls={previousRolls}
+								sound={sound}
 							/>
 						</div>
 					)}
@@ -147,7 +165,6 @@ const Home = () => {
 						<PreviousRolls previousRolls={previousRolls} hide={hide} />
 						<BetAmount />
 					</div>
-					{/* {console.log("bet won: ", betWon)} */}
 					<div className="card-wrapper flex-md-wrap card-wrapper-padding">
 						<div
 							className="card-container mb-lg-0 mb-5"
