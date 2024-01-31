@@ -11,16 +11,26 @@ const PreviousRolls = ({ previousRolls, hide }) => {
 	useEffect(() => {
 		if (!hide) {
 			const last100Rolls = previousRolls.slice(-100);
+
 			setIconsCount({
 				black: last100Rolls.filter((value) => value === "win14x").length,
 				gray: last100Rolls.filter((value) => value === "win2xSilver").length,
 				golden: last100Rolls.filter((value) => value === "win2x").length,
 			});
+
 			if (previousRolls.length > 10) {
-				setIcons((prevIcons) => previousRolls.slice(-10));
+				// Reset animation classes
+				document.querySelectorAll(".icon").forEach((el) => {
+					el.classList.remove("fade-out");
+				});
+				setIcons((prevIcons) => previousRolls.slice(-11));
 			} else {
 				setIcons([...previousRolls]);
 			}
+		} else {
+			document.querySelectorAll(".icon").forEach((el) => {
+				el.classList.remove("pop-in");
+			});
 		}
 	}, [hide, previousRolls]);
 
@@ -30,20 +40,28 @@ const PreviousRolls = ({ previousRolls, hide }) => {
 			<div
 				className={`d-flex align-items-center justify-content-start ml-3 mb-2 icon-container position-relative flex-wrap`}
 				style={{ padding: "2px 0px" }}>
-				{icons.map((icon, index) => (
-					<div key={index} className={`icon `}>
-						<img
-							src={
-								icon === "win2x"
-									? "/images/Coin3.svg"
-									: icon === "win2xSilver"
-									? "/images/Coin1.svg"
-									: "/images/Coin2.svg"
-							}
-							alt="icon"
-						/>
-					</div>
-				))}
+				{icons.length > 0 ? (
+					icons.map((icon, index) => (
+						<div
+							key={index}
+							className={`icon ${
+								index === 0 && previousRolls.length > 10 ? "fade-out" : ""
+							} ${index === icons.length - 1 ? "pop-in" : ""}`}>
+							<img
+								src={
+									icon === "win2x"
+										? "/images/Coin3.svg"
+										: icon === "win2xSilver"
+										? "/images/Coin1.svg"
+										: "/images/Coin2.svg"
+								}
+								alt="icon"
+							/>
+						</div>
+					))
+				) : (
+					<h4 className="mb-0 coin-heading ml-3">N/A</h4>
+				)}
 			</div>
 
 			<div className="d-flex align-items-center right-coins px-2 pt-2 mb-2 pt-md-0">

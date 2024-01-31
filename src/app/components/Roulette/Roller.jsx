@@ -9,6 +9,122 @@ const prizes = [
 	},
 
 	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
+		text: "win14x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
 		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
 		text: "win2xSilver",
 	},
@@ -34,6 +150,42 @@ const prizes = [
 	},
 
 	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
+		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
+		text: "win2xSilver",
+	},
+	{
+		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
+		text: "win2x",
+	},
+	{
 		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
 		text: "win2xSilver",
 	},
@@ -54,62 +206,7 @@ const prizes = [
 		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
 		text: "win2x",
 	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/JsZ4xzgz/Type-Silver.png",
-		text: "win2xSilver",
-	},
-	{
-		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
-		text: "win14x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
-	{
-		image: "https://i.postimg.cc/GHRDG69Y/Type-Gold.png",
-		text: "win2x",
-	},
+
 	{
 		image: "https://i.postimg.cc/MnQXLDcx/Type-Black.png",
 		text: "win14x",
@@ -151,7 +248,7 @@ const Roller = ({
 	const [start, setStart] = useState(false);
 	const [count, setCount] = useState(0);
 	const [prizeIndex, setPrizeIndex] = useState(
-		Math.floor(Math.random() * prizes.length)
+		Math.floor(Math.random() * Math.floor(prizes.length))
 	);
 	const handleStart = () => {
 		setStart(true);
