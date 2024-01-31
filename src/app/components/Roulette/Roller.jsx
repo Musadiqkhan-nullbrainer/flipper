@@ -236,6 +236,9 @@ const prizeList = reproducedPrizeList.map((prize) => ({
 			? crypto.randomUUID()
 			: generateId(),
 }));
+const prizeItemWidth = 100; // your custom value
+const prizeItemHeight = 100; // your custom value
+
 const Roller = ({
 	hide,
 	setPreviousRolls,
@@ -276,25 +279,18 @@ const Roller = ({
 		}, 1000);
 	};
 	useEffect(() => {
-		const imageWrappers = document.querySelectorAll(
-			".roulette-pro-regular-image-wrapper"
-		);
-
-		// Iterate through each image wrapper
-		imageWrappers.forEach((wrapper) => {
-			// Get the image element within the current wrapper
-			const image = wrapper.querySelector("img");
-
-			// Clone the image element
-			const clonedImage = image.cloneNode(true);
-
-			// Append the cloned image to the wrapper (making it double)
-			wrapper.appendChild(clonedImage);
-		});
+		const rouletteProWrapper = document.querySelector(".roulette-pro-wrapper");
+		// Create a new div element
+		const newDiv = document.createElement("div");
+		newDiv.setAttribute("data-testid", "design-top");
+		newDiv.className = "roulette-pro-regular-design-top horizontal";
+		// Append the new div to the top level of .roulette-pro-wrapper
+		rouletteProWrapper.insertBefore(newDiv, rouletteProWrapper.firstChild);
 	}, []);
 	useEffect(() => {
 		hide && handleStart();
 	}, [hide]);
+
 	return (
 		<>
 			<RoulettePro
@@ -303,11 +299,27 @@ const Roller = ({
 				start={start}
 				onPrizeDefined={handlePrizeDefined}
 				spinningTime={5}
-				options={{ stopInCenter: false }}
-				classes={{
-					prizeItem: "prize-item-roulette",
-					wrapper: "roulette-wrap",
-					prizeListWrapper: "roulette-list-wrap",
+				options={{ stopInCenter: true }}
+				designPlugin={() => ({
+					prizeItemWidth,
+					prizeItemHeight,
+				})}
+				prizeItemRenderFunction={({ image }) => {
+					return (
+						<div
+							className="roulette-pro-regular-prize-item"
+							style={{ width: prizeItemWidth, height: prizeItemHeight }}>
+							<div className={"roulette-pro-regular-prize-item-wrapper center"}>
+								<div className="roulette-pro-regular-image-wrapper">
+									<img
+										className="roulette-pro-regular-prize-item-image"
+										src={image}
+										alt={"prize item"}
+									/>
+								</div>
+							</div>
+						</div>
+					);
 				}}
 			/>
 		</>
